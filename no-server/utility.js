@@ -1,3 +1,5 @@
+'use strict';
+
 function qs(selector, parent = document) {
   return parent.querySelector(selector);
 }
@@ -33,5 +35,3 @@ if (! Array.prototype.at) {
     value: at,
   });
 }
-
-export {qs, qsa, ael, aelo};

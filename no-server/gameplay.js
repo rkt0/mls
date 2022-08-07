@@ -1,9 +1,9 @@
-import {qs, qsa, ael, aelo} from './utility.js';
+'use strict';
 
-// Object for game state
+// Global object for game state
 const bowl = {meat: 0, loaf: 0, poop: 0};
 
-// Utility functions for gameplay
+// Global utility functions for gameplay
 function showButton(className) {
   const b = qs(`button.${className}`);
   b.style.visibility = 'visible';
