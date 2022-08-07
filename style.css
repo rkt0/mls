@@ -32,7 +32,7 @@
     --t-button: 0.4s;
     --t-prog: calc(var(--t-bowl) * 2);
     --t-item-mv: calc(5s / 3);
-    --i-item-rm: 0.5s;
+    --t-item-rm: 0.5s;
   }
 }
 
