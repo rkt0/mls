@@ -276,7 +276,6 @@ for (const i of qsa('.endorsement img')) {
     const player = qs('audio');
     player.src = queue.pop();
     player.play();
-    alert(qs('audio').volume);
   }
   function resetQueue() {
     do {
