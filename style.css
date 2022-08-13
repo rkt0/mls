@@ -76,8 +76,10 @@ button {
   transition: transform var(--t-button);
   transform: scaleY(0);
 }
-button:hover {
-  box-shadow: 0 0 12px 6px var(--highlight);
+@media (hover: hover) {
+  button:hover {
+    box-shadow: 0 0 12px 6px var(--highlight);
+  }  
 }
 
 section {
