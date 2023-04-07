@@ -1,9 +1,9 @@
 @media (max-width: 750px) or (max-height: 540px) {
   :root {
-    --bg: green;
+    --bg: blue;
   }
-  html {
-    transform: scale(0.48);
+  body {
+    transform: scale(0.8);
     outline: solid 10px green;
   }
   
