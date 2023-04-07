@@ -1,10 +1,10 @@
 @media (max-width: 750px) or (max-height: 540px) {
   :root {
-    --bg: yellow;
+    --bg: green;
   }
-  body {
-/*    transform: scale(0.48);*/
-/*    outline: solid 10px green;*/
+  html {
+    transform: scale(0.48);
+    outline: solid 10px green;
   }
   
 }
