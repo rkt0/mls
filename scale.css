@@ -6,6 +6,10 @@
     transform: scale(1);
     outline: solid 10px green;
   }
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
   
 }
 
