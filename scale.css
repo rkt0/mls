@@ -1,6 +1,6 @@
 @media (max-width: 750px) or (max-height: 540px) {
   :root {
-    --bg: blue;
+    --bg: orange;
   }
   body {
     transform: scale(1);
