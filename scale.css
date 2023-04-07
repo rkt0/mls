@@ -2,6 +2,7 @@
   
   body {
     transform: scale(0.48);
+    opacity: 50%;
   }
   
 }
