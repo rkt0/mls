@@ -4,6 +4,7 @@
   }
   body {
     transform: scale(0.48);
+    outline: solid 10px green;
   }
   
 }
