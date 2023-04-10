@@ -81,6 +81,15 @@ const eType = matchMedia('(hover: none)').matches ?
   document.title = `${eText} ${document.title}`;
 }
 
+// Get space from CSS custom properties
+function getCoreItemSpace() {
+  const rootStyle = getComputedStyle(qs(':root'));
+  const sizes = ['--core-size', '--item-size'].map(
+    x => parseInt(rootStyle.getPropertyValue(x))
+  );
+  return sizes[0] - sizes[1];
+}
+
 // Button click/touch handlers
 ael('button.play', eType, () => {
   for (const type in bowl) bowl[type] = 0;
@@ -97,6 +106,7 @@ ael('button.play', eType, () => {
     hideButton('play');
   });
   aelo('.gameplay .core', 'transitionend', makeItem);
+  const space = getCoreItemSpace();
   function makeItem() {
     const item = document.createElement('img');
     item.classList.add('item');
@@ -107,7 +117,7 @@ ael('button.play', eType, () => {
     item.alt = type;
     const [axis, fixed] = rand() < 0.5 ?
         ['vertical', 'left'] : ['horizontal', 'top'];
-    item.style[fixed] = `${rand() * 480}px`;
+    item.style[fixed] = `${rand() * space}px`;
     const dir = rand() < 0.5 ? 'inc' : 'dec';
     item.style.animationName = `${axis}-${dir}`;
     ael(item, 'mouseenter', function() {

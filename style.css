@@ -15,6 +15,8 @@
   --t-prog: var(--t-bowl);
   --t-item-mv: 1.25s;
   --t-item-rm: 0.2s;
+  --core-size: 540px;
+  --item-size:  60px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -185,14 +187,14 @@ section.front .lower.ready {
 /* Gameplay section */
 
 section.gameplay .core {
-  width:  540px;
-  height: 540px;
+  min-width:  var(--core-size);
+  min-height: var(--core-size);
   overflow: hidden;
 }
 
 .item {
-  width:  60px;
-  height: 60px;
+  width:  var(--item-size);
+  height: var(--item-size);
   position: relative;
   animation-duration: var(--t-item-mv);
   animation-timing-function: linear;
@@ -203,20 +205,20 @@ section.gameplay .core {
   transform: scale(0);
 }
 @keyframes vertical-inc {
-  from {top: -60px;}
-  to   {top: 540px;}
+  from {top: calc(var(--item-size) * -1);}
+  to   {top: var(--core-size);}
 }
 @keyframes vertical-dec {
-  from {top: 540px;}
-  to   {top: -60px;}
+  from {top: var(--core-size);}
+  to   {top: calc(var(--item-size) * -1);}
 }
 @keyframes horizontal-inc {
-  from {left: -60px;}
-  to   {left: 540px;}
+  from {left: calc(var(--item-size) * -1);}
+  to   {left: var(--core-size);}
 }
 @keyframes horizontal-dec {
-  from {left: 540px;}
-  to   {left: -60px;}
+  from {left: var(--core-size);}
+  to   {left: calc(var(--item-size) * -1);}
 }
 
 section.gameplay .side {
