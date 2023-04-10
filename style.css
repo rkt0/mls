@@ -106,7 +106,7 @@ section {
 
 .headline {
   font-size: 48px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 body {
@@ -140,7 +140,6 @@ section.front {
 
 section.front .core {
   text-align: center;
-  font-size: 60px;
   padding: 48px;
 }
 
@@ -392,6 +391,43 @@ video {
     --bowl-width: 72px;
   }
   
+  .headline {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+  
+  section.start .zone {
+    box-sizing: border-box;
+    width: var(--core-size);
+    padding: 36px;
+    font-size: 30px;
+  }
+  
+  section.front .core {
+    width:  240px;
+    padding: 24px;
+  }
+  
+  section.front .lower {
+    width: 240px;
+    margin-top: 24px;
+    padding: 12px 24px;
+    border-radius: 144px 144px 12px 12px;
+  }
+  
+  .endorsement {
+    flex-direction: column;
+  }
+
+  .endorsement img {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+  
+  .endorsement .name {
+    text-align: right;
+  }
+
   section.gameplay {
     flex-direction: column;
   }
