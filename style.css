@@ -223,7 +223,7 @@ section.gameplay .core {
 
 section.gameplay .side {
   width:  180px;
-  height: var(--core-size);
+  height: 360px;
   margin-left: 30px;
   display: flex;
   flex-direction: column;
@@ -231,7 +231,14 @@ section.gameplay .side {
   justify-content: space-evenly;
 }
 
-section.gameplay .side button {
+.button-container {
+  height: 0;
+  text-align: center;
+}
+.button-container:last-child {
+  margin-bottom: 66px;
+}
+.button-container button {
   width: 56px;
 }
 
@@ -390,12 +397,10 @@ video {
     --core-size: 324px;
     --item-size:  48px;
   }
-  
   .headline {
     font-size: 36px;
     margin-bottom: 18px;
   }
-  
   section.start .zone {
     box-sizing: border-box;
     width: var(--core-size);
@@ -407,22 +412,18 @@ video {
     width:  240px;
     padding: 24px;
   }
-  
   section.front .lower {
     width: 240px;
     margin-top: 132px;
   }
-  
   .endorsement {
     flex-direction: column;
   }
-
   .endorsement img {
     margin-right: 0;
     margin-top: -132px;
     border: solid 12px var(--fg);
   }
-  
   .endorsement .name {
     text-align: right;
   }
@@ -430,20 +431,12 @@ video {
   section.gameplay {
     flex-direction: column;
   }
-  
   section.gameplay .side {
     width: var(--core-size);
     height: calc(var(--core-size) / 2);
     margin-left: 0;
     margin-top: 18px;
     flex-direction: row;
-  }
-  
-  section.gameplay .side button {
-    width: 48px;
-    --pad-v: 6px;
-    padding: var(--pad-v) 12px;
-    font-size: inherit;
   }
 
 }
