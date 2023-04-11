@@ -410,9 +410,7 @@ video {
   
   section.front .lower {
     width: 240px;
-    margin-top: 24px;
-    padding: 12px 24px;
-    border-radius: 144px 144px 12px 12px;
+    margin-top: 132px;
   }
   
   .endorsement {
@@ -421,13 +419,14 @@ video {
 
   .endorsement img {
     margin-right: 0;
-    margin-bottom: 18px;
+    margin-top: -132px;
+    border: solid 12px var(--fg);
   }
   
   .endorsement .name {
     text-align: right;
   }
-
+  
   section.gameplay {
     flex-direction: column;
   }
