@@ -258,49 +258,17 @@ button.bake {
     calc(var(--bowl-width) * 2 / 5)
     calc(var(--bowl-width) * 2 / 5);
 }
-.bowl.shaking,
-.bowl.mixing {
-  animation-name: rock-bowl;
+.bowl:is(.shaking, .mixing) {
+  animation-name: bounce-bowl;
   animation-duration: var(--t-bowl);
   animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+.bowl.shaking {
+  animation-iteration-count: 2;
 }
 .bowl.mixing {
   animation-iteration-count: 6;
-}
-@media (hover: none) {
-  .bowl.shaking,
-  .bowl.mixing {
-    animation-name: bounce-bowl;
-  }
-  .bowl.shaking {
-    animation-iteration-count: 2;
-  }
-}
-@keyframes rock-bowl {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: 48px 60px;
-  }
-  24% {
-    transform: translate(-1px, 2px) rotate(-15deg);
-    transform-origin: 36px 58px;
-  }
-  48% {
-    transform: rotate(0deg);
-    transform-origin: 48px 60px;
-  }
-  52% {
-    transform: rotate(0deg);
-    transform-origin: 72px 60px;
-  }
-  76% {
-    transform: translate(1px, 2px) rotate(15deg);
-    transform-origin: 84px 58px;
-  }
-  100% {
-    transform: rotate(0deg);
-    transform-origin: 72px 60px;
-  }
 }
 @keyframes bounce-bowl {
     0% {transform: rotate(  0deg);}
