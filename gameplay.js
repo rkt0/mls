@@ -299,7 +299,8 @@ for (const i of qsa('.endorsement img')) {
     } while (qs('audio').src.endsWith(queue.at(-1)));
   }
   ael('audio', 'ended', next);
-  aelo('section.start', eType, next);
+  const e0 = eType === 'click' ? eType : 'touchend';
+  aelo('section.start', e0, next);
 }
 
 // Show start section and assign click/touch handler
