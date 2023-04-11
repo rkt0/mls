@@ -241,6 +241,9 @@ section.gameplay .side {
 .button-container button {
   width: 56px;
 }
+button.bake {
+  background: #fa4616;
+}
 
 .bowl {
   background: var(--bowl);
