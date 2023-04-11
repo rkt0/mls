@@ -76,7 +76,6 @@ const eType = matchMedia('(hover: none)').matches ?
 {
   const eText = eType === 'click' ? 'Click' : 'Touch';
   qs('section.start .zone').prepend(`${eText} `);
-  document.title = `${eText} ${document.title}`;
 }
 
 // Get space from CSS custom properties
