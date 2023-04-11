@@ -46,8 +46,6 @@ function section(className) {
   }
 }
 function startGame() {
-  document.title = 'Meatloaf Simulator';
-  qs('link[rel="icon"]').href = 'img/icon.png';
   section('front');
   aelo('.front .core', 'transitionend', () => {
     showButton('play');
