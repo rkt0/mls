@@ -388,8 +388,7 @@ video {
 
   :root {
     --core-size: 324px;
-    --item-size:  36px;
-    --bowl-width: 72px;
+    --item-size:  48px;
   }
   
   .headline {
@@ -434,11 +433,10 @@ video {
   
   section.gameplay .side {
     width: var(--core-size);
-    height: 108px;
+    height: calc(var(--core-size) / 2);
     margin-left: 0;
     margin-top: 18px;
     flex-direction: row;
-    font-size: 20px;
   }
   
   section.gameplay .side button {
