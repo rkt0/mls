@@ -377,6 +377,7 @@ video {
   transform: scaleY(0);
   transition: transform var(--t-zone);
   cursor: none;
+  background: var(--bg);
 }
 
 
